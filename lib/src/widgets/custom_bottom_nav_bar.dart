@@ -1,5 +1,6 @@
-import 'package:domus/view/home_screen_view_model.dart';
 import 'package:flutter/material.dart';
+
+import '../../view/home_screen_view_model.dart';
 
 class CustomBottomNavBar extends StatelessWidget {
   const CustomBottomNavBar({

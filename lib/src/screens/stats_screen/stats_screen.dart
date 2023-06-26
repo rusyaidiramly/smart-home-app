@@ -1,5 +1,6 @@
-import 'package:domus/src/screens/stats_screen/components.dart';
 import 'package:flutter/material.dart';
+
+import 'components.dart';
 
 class StatsScreen extends StatelessWidget {
   const StatsScreen({Key? key}) : super(key: key);
@@ -37,8 +38,8 @@ class StatsScreen extends StatelessWidget {
         ],
         elevation: 0,
       ),
-      body: Column(
-        children: const [
+      body: const Column(
+        children: [
           TypeSelection(),
           SizedBox(height: 15),
           Expanded(

@@ -1,8 +1,9 @@
-import 'package:domus/config/size_config.dart';
-import 'package:domus/view/smart_ac_view_model.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter_svg/svg.dart';
 import 'package:sleek_circular_slider/sleek_circular_slider.dart';
+
+import '../../../../config/size_config.dart';
+import '../../../../view/smart_ac_view_model.dart';
 
 class Body extends StatelessWidget {
   final SmartACViewModel model;
@@ -35,14 +36,14 @@ class Body extends StatelessWidget {
                   children: [
                     Text(
                       'Air\nConditioner',
-                      style: Theme.of(context).textTheme.headline1!.copyWith(
+                      style: Theme.of(context).textTheme.displayLarge!.copyWith(
                             fontSize: 45,
                             color: const Color(0xFFBDBDBD).withOpacity(0.5),
                           ),
                     ),
                     Text(
                       'Living\nRoom',
-                      style: Theme.of(context).textTheme.headline1,
+                      style: Theme.of(context).textTheme.displayLarge,
                     ),
                   ],
                 ),
@@ -96,11 +97,11 @@ class Body extends StatelessWidget {
                     children: [
                       Text(
                         '${value.toInt()}°',
-                        style: Theme.of(context).textTheme.headline1,
+                        style: Theme.of(context).textTheme.displayLarge,
                       ),
                       Text(
                         'Celcius',
-                        style: Theme.of(context).textTheme.headline3,
+                        style: Theme.of(context).textTheme.displaySmall,
                       ),
                     ],
                   ),
@@ -119,14 +120,14 @@ class Body extends StatelessWidget {
                 children: [
                   Text(
                     'Samsung AC',
-                    style: Theme.of(context).textTheme.headline2,
+                    style: Theme.of(context).textTheme.displayMedium,
                   ),
                   const SizedBox(
                     height: 5,
                   ),
                   Text(
                     'Connected',
-                    style: Theme.of(context).textTheme.headline5,
+                    style: Theme.of(context).textTheme.headlineSmall,
                   )
                 ],
               ),
@@ -153,7 +154,7 @@ class Body extends StatelessWidget {
           // ),
           Text(
             'Mode',
-            style: Theme.of(context).textTheme.headline2,
+            style: Theme.of(context).textTheme.displayMedium,
           ),
           SizedBox(
             height: getProportionateScreenHeight(20),
@@ -171,7 +172,7 @@ class Body extends StatelessWidget {
               borderRadius: BorderRadius.circular(15),
               textStyle: Theme.of(context)
                   .textTheme
-                  .headline2!
+                  .displayMedium!
                   .copyWith(color: Colors.white),
               children: <Widget>[
                 SizedBox(

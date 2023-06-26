@@ -1,8 +1,9 @@
 import 'dart:ui';
 
-import 'package:domus/constant/constant.dart';
-import 'package:domus/provider/base_model.dart';
 import 'package:sliding_up_panel/sliding_up_panel.dart';
+
+import '../constant/constant.dart';
+import '../provider/base_model.dart';
 
 class SmartLightViewModel extends BaseModel {
   //--------------VARIABLES----------//

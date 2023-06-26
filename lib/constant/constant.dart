@@ -1,5 +1,6 @@
-import 'package:domus/src/models/color_model.dart';
 import 'package:flutter/material.dart';
+
+import '../src/models/color_model.dart';
 
 ///Constants for custom dialog widget
 class Constants {

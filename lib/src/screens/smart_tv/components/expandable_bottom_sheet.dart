@@ -1,6 +1,7 @@
-import 'package:domus/config/size_config.dart';
 import 'package:flutter/material.dart';
-import 'package:domus/view/smart_tv_view_model.dart';
+
+import '../../../../config/size_config.dart';
+import '../../../../view/smart_tv_view_model.dart';
 
 class ExpandableBottomSheet extends StatelessWidget {
   const ExpandableBottomSheet({Key? key, required this.model})
@@ -45,14 +46,14 @@ class ExpandableBottomSheet extends StatelessWidget {
                   children: [
                     Text(
                       'Night Mode',
-                      style: Theme.of(context).textTheme.headline2,
+                      style: Theme.of(context).textTheme.displayMedium,
                     ),
                     const SizedBox(
                       height: 5,
                     ),
                     Text(
                       'Set room light',
-                      style: Theme.of(context).textTheme.headline5,
+                      style: Theme.of(context).textTheme.headlineSmall,
                     )
                   ],
                 ),

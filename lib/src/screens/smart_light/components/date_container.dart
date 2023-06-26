@@ -1,5 +1,6 @@
-import 'package:domus/config/size_config.dart';
 import 'package:flutter/material.dart';
+
+import '../../../../config/size_config.dart';
 
 class DateContainer extends StatelessWidget {
   const DateContainer({
@@ -33,7 +34,7 @@ class DateContainer extends StatelessWidget {
           child: Center(
             child: Text(
               ' $date\n$day',
-              style: Theme.of(context).textTheme.headline2!.copyWith(
+              style: Theme.of(context).textTheme.displayMedium!.copyWith(
                     color: active ? Colors.white : const Color(0xFFBDBDBD),
                   ),
             ),

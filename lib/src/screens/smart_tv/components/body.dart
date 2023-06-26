@@ -1,8 +1,9 @@
-import 'package:domus/config/size_config.dart';
-import 'package:domus/src/screens/smart_tv/components/mood_toggle_buttons.dart';
-import 'package:domus/view/smart_tv_view_model.dart';
 import 'package:flutter/material.dart';
-import 'package:domus/src/screens/smart_tv/components/intensity_slider.dart';
+
+import '../../../../config/size_config.dart';
+import '../../../../view/smart_tv_view_model.dart';
+import 'intensity_slider.dart';
+import 'mood_toggle_buttons.dart';
 
 class Body extends StatelessWidget {
   final SmartTvViewModel model;
@@ -58,16 +59,16 @@ class Body extends StatelessWidget {
                               'Living\nRoom',
                               style: Theme.of(context)
                                   .textTheme
-                                  .headline1!
+                                  .displayLarge!
                                   .copyWith(
-                                fontSize: 45,
-                                color: const Color(0xFFBDBDBD)
-                                    .withOpacity(0.5),
-                              ),
+                                    fontSize: 45,
+                                    color: const Color(0xFFBDBDBD)
+                                        .withOpacity(0.5),
+                                  ),
                             ),
                             Text(
                               'Smart\nTv',
-                              style: Theme.of(context).textTheme.headline1,
+                              style: Theme.of(context).textTheme.displayLarge,
                             ),
                           ],
                         ),
@@ -76,7 +77,7 @@ class Body extends StatelessWidget {
                         ),
                         Text(
                           'Power',
-                          style: Theme.of(context).textTheme.headline2,
+                          style: Theme.of(context).textTheme.displayMedium,
                         ),
                         SizedBox(
                           height: getProportionateScreenHeight(4),

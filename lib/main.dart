@@ -1,9 +1,10 @@
-import 'package:domus/provider/getit.dart';
-import 'package:domus/routes/routes.dart';
-import 'package:domus/service/navigation_service.dart';
-// import 'package:domus/src/screens/about_screen/about_us_screen.dart';
-import 'package:domus/src/screens/splash_screen/splash_screen.dart';
 import 'package:flutter/material.dart';
+
+import 'provider/getit.dart';
+import 'routes/routes.dart';
+import 'service/navigation_service.dart';
+// import 'package:domus/src/screens/about_screen/about_us_screen.dart';
+import 'src/screens/splash_screen/splash_screen.dart';
 
 void main() async {
   setupLocator();
@@ -42,37 +43,37 @@ class MyApp extends StatelessWidget {
           brightness: Brightness.light,
         ),
         textTheme: const TextTheme(
-          headline1: TextStyle(
+          displayLarge: TextStyle(
             fontStyle: FontStyle.normal,
             fontWeight: FontWeight.bold,
             fontSize: 32,
             color: Color(0xFF464646),
           ),
-          headline2: TextStyle(
+          displayMedium: TextStyle(
             fontStyle: FontStyle.normal,
             fontWeight: FontWeight.w700,
             fontSize: 18,
             color: Color(0xFF464646),
           ),
-          headline3: TextStyle(
+          displaySmall: TextStyle(
             fontStyle: FontStyle.normal,
             fontWeight: FontWeight.w400,
             fontSize: 18,
             color: Color(0xFF464646),
           ),
-          headline4: TextStyle(
+          headlineMedium: TextStyle(
             fontStyle: FontStyle.normal,
             fontWeight: FontWeight.w400,
             fontSize: 18,
             color: Color(0xFFBDBDBD),
           ),
-          headline5: TextStyle(
+          headlineSmall: TextStyle(
             fontStyle: FontStyle.normal,
             fontWeight: FontWeight.w400,
             fontSize: 12,
             color: Color(0xFFBDBDBD),
           ),
-          headline6: TextStyle(
+          titleLarge: TextStyle(
             fontStyle: FontStyle.normal,
             fontWeight: FontWeight.w400,
             fontSize: 14,

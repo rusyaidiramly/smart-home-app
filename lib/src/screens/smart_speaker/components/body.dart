@@ -1,7 +1,8 @@
-import 'package:domus/config/size_config.dart';
-import 'package:domus/view/smart_speaker_view_model.dart';
 import 'package:flutter/material.dart';
 import 'package:sleek_circular_slider/sleek_circular_slider.dart';
+
+import '../../../../config/size_config.dart';
+import '../../../../view/smart_speaker_view_model.dart';
 
 class Body extends StatelessWidget {
   final SmartSpeakerViewModel model;
@@ -34,14 +35,14 @@ class Body extends StatelessWidget {
                   children: [
                     Text(
                       'Smart\nSpeaker',
-                      style: Theme.of(context).textTheme.headline1!.copyWith(
+                      style: Theme.of(context).textTheme.displayLarge!.copyWith(
                             fontSize: 45,
                             color: const Color(0xFFBDBDBD).withOpacity(0.5),
                           ),
                     ),
                     Text(
                       'Living\nRoom',
-                      style: Theme.of(context).textTheme.headline1,
+                      style: Theme.of(context).textTheme.displayLarge,
                     ),
                   ],
                 ),
@@ -110,18 +111,18 @@ class Body extends StatelessWidget {
               children: [
                 Text(
                   '3:15 | 4:26',
-                  style: Theme.of(context).textTheme.headline3,
+                  style: Theme.of(context).textTheme.displaySmall,
                 ),
                 SizedBox(
                   height: getProportionateScreenHeight(10),
                 ),
                 Text(
                   'STAY',
-                  style: Theme.of(context).textTheme.headline1,
+                  style: Theme.of(context).textTheme.displayLarge,
                 ),
                 Text(
                   'Justin Bieber Ft. Kid Laroi',
-                  style: Theme.of(context).textTheme.headline4,
+                  style: Theme.of(context).textTheme.headlineMedium,
                 ),
                 const SizedBox(
                   height: 15,
@@ -263,14 +264,14 @@ class Body extends StatelessWidget {
                 children: [
                   Text(
                     'Kakao Mini C',
-                    style: Theme.of(context).textTheme.headline2,
+                    style: Theme.of(context).textTheme.displayMedium,
                   ),
                   const SizedBox(
                     height: 5,
                   ),
                   Text(
                     'Connected',
-                    style: Theme.of(context).textTheme.headline5,
+                    style: Theme.of(context).textTheme.headlineSmall,
                   )
                 ],
               ),

@@ -1,6 +1,7 @@
-import 'package:domus/config/size_config.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter_svg/svg.dart';
+
+import '../../../../config/size_config.dart';
 
 class MusicWidget extends StatelessWidget {
   const MusicWidget({Key? key}) : super(key: key);
@@ -41,11 +42,11 @@ class MusicWidget extends StatelessWidget {
               children: [
                 Text(
                   'Music',
-                  style: Theme.of(context).textTheme.headline2,
+                  style: Theme.of(context).textTheme.displayMedium,
                 ),
                 Text(
                   'Give a Little Bit',
-                  style: Theme.of(context).textTheme.headline4,
+                  style: Theme.of(context).textTheme.headlineMedium,
                 ),
               ],
             ),

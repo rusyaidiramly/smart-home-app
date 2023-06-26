@@ -1,6 +1,7 @@
-import 'package:domus/config/size_config.dart';
-import 'package:domus/view/home_screen_view_model.dart';
 import 'package:flutter/material.dart';
+
+import '../../../../config/size_config.dart';
+import '../../../../view/home_screen_view_model.dart';
 
 class SavingsContainer extends StatelessWidget {
   const SavingsContainer({Key? key, required this.model}) : super(key: key);
@@ -31,14 +32,14 @@ class SavingsContainer extends StatelessWidget {
                   children: [
                     Text(
                       'Energy Saving',
-                      style: Theme.of(context).textTheme.headline2,
+                      style: Theme.of(context).textTheme.displayMedium,
                     ),
                     const SizedBox(
                       height: 10,
                     ),
                     Text(
                       '+35%',
-                      style: Theme.of(context).textTheme.headline1!.copyWith(
+                      style: Theme.of(context).textTheme.displayLarge!.copyWith(
                             color: Colors.green,
                           ),
                     ),
@@ -47,7 +48,7 @@ class SavingsContainer extends StatelessWidget {
                     ),
                     Text(
                       '23.5 kWh',
-                      style: Theme.of(context).textTheme.headline5,
+                      style: Theme.of(context).textTheme.headlineSmall,
                     ),
                   ],
                 ),

@@ -1,11 +1,13 @@
-import 'package:domus/src/screens/favourites_screen/components/favourite_tile.dart';
-import 'package:domus/src/screens/smart_ac/smart_ac.dart';
-import 'package:domus/src/screens/smart_fan/smart_fan.dart';
-import 'package:domus/src/screens/smart_light/smart_light.dart';
-import 'package:domus/src/screens/smart_speaker/smart_speaker.dart';
 import 'package:flutter/material.dart';
-import 'package:domus/view/home_screen_view_model.dart';
-import 'package:domus/src/screens/favourites_screen/components/body.dart';
+
+import '../../../../view/home_screen_view_model.dart';
+import '../../smart_ac/smart_ac.dart';
+import '../../smart_fan/smart_fan.dart';
+import '../../smart_light/smart_light.dart';
+import '../../smart_speaker/smart_speaker.dart';
+import 'body.dart';
+import 'favourite_tile.dart';
+
 class FavouriteList extends StatefulWidget {
   const FavouriteList({Key? key, required this.model}) : super(key: key);
   final HomeScreenViewModel model;
@@ -14,17 +16,16 @@ class FavouriteList extends StatefulWidget {
 }
 
 class _FavouriteListState extends State<FavouriteList> {
-  List<FavouriteTile> favs =<FavouriteTile>[];
+  List<FavouriteTile> favs = <FavouriteTile>[];
   @override
   void initState() {
-    // TODO: implement initState
     super.initState();
     formList();
   }
-  formList()
-  {
+
+  void formList() {
     favs.clear();
-    if(widget.model.isLightFav) {
+    if (widget.model.isLightFav) {
       favs.add(
         FavouriteTile(
           itsOn: widget.model.isLightOn,
@@ -37,25 +38,26 @@ class _FavouriteListState extends State<FavouriteList> {
           device: 'Light',
           deviceCount: '1 device',
           isFav: widget.model.isSpeakerFav,
-        ),);
-    }
-    if(widget.model.isFanFav) {
-      favs.add( FavouriteTile(
-        itsOn: widget.model.isFanON,
-        switchButton: widget.model.fanSwitch,
-        switchFav: widget.model.fanFav,
-        onTap: () {
-          Navigator.of(context).pushNamed(SmartFan.routeName);
-        },
-        iconAsset: 'assets/icons/svg/fan.svg',
-        device: 'Fan',
-        deviceCount: '2 devices',
-        isFav: widget.model.isFanFav,
-      ),
+        ),
       );
     }
-    if(widget.model.isACFav)
-    {
+    if (widget.model.isFanFav) {
+      favs.add(
+        FavouriteTile(
+          itsOn: widget.model.isFanON,
+          switchButton: widget.model.fanSwitch,
+          switchFav: widget.model.fanFav,
+          onTap: () {
+            Navigator.of(context).pushNamed(SmartFan.routeName);
+          },
+          iconAsset: 'assets/icons/svg/fan.svg',
+          device: 'Fan',
+          deviceCount: '2 devices',
+          isFav: widget.model.isFanFav,
+        ),
+      );
+    }
+    if (widget.model.isACFav) {
       favs.add(
         FavouriteTile(
           itsOn: widget.model.isACON,
@@ -71,8 +73,7 @@ class _FavouriteListState extends State<FavouriteList> {
         ),
       );
     }
-    if(widget.model.isSpeakerFav)
-    {
+    if (widget.model.isSpeakerFav) {
       favs.add(
         FavouriteTile(
           itsOn: widget.model.isSpeakerON,
@@ -92,20 +93,20 @@ class _FavouriteListState extends State<FavouriteList> {
 
   @override
   Widget build(BuildContext context) {
-    return favs.isEmpty? const Body() : Container(
-      color: Colors.white,
-      padding: const EdgeInsets.all(10),
-      child: ListView.builder(
-        itemCount: favs.length,
-        shrinkWrap: true,
-        itemBuilder: (context,index){
-          return Container(
-              padding: const EdgeInsets.only(bottom: 10),
-              child: favs[index]
+    return favs.isEmpty
+        ? const Body()
+        : Container(
+            color: Colors.white,
+            padding: const EdgeInsets.all(10),
+            child: ListView.builder(
+              itemCount: favs.length,
+              shrinkWrap: true,
+              itemBuilder: (context, index) {
+                return Container(
+                    padding: const EdgeInsets.only(bottom: 10),
+                    child: favs[index]);
+              },
+            ),
           );
-        },
-      ),
-    );
   }
 }
-

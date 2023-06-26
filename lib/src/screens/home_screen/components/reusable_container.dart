@@ -1,5 +1,6 @@
-import 'package:domus/config/size_config.dart';
 import 'package:flutter/material.dart';
+
+import '../../../../config/size_config.dart';
 
 class ReusableCard extends StatelessWidget {
   const ReusableCard({
@@ -49,7 +50,7 @@ class ReusableCard extends StatelessWidget {
               onTap: onTap,
               child: Text(
                 title,
-                style: Theme.of(context).textTheme.headline2,
+                style: Theme.of(context).textTheme.displayMedium,
               ),
             ),
           ],

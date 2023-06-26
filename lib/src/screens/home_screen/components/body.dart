@@ -1,18 +1,18 @@
-import 'package:domus/config/size_config.dart';
-import 'package:domus/src/screens/home_screen/components/music_widget.dart';
-import 'package:domus/src/screens/home_screen/components/savings_container.dart';
-import 'package:domus/src/screens/home_screen/components/weather_container.dart';
-import 'package:domus/src/screens/set_event_screen/set_event_screen.dart';
-import 'package:domus/src/screens/smart_ac/smart_ac.dart';
-import 'package:domus/src/screens/smart_fan/smart_fan.dart';
-import 'package:domus/src/screens/smart_light/smart_light.dart';
-import 'package:domus/src/screens/smart_speaker/smart_speaker.dart';
-import 'package:domus/view/home_screen_view_model.dart';
-import 'package:domus/src/screens/smart_tv/smart_tv.dart';
 import 'package:flutter/material.dart';
 
+import '../../../../config/size_config.dart';
+import '../../../../view/home_screen_view_model.dart';
+import '../../set_event_screen/set_event_screen.dart';
+import '../../smart_ac/smart_ac.dart';
+import '../../smart_fan/smart_fan.dart';
+import '../../smart_light/smart_light.dart';
+import '../../smart_speaker/smart_speaker.dart';
+import '../../smart_tv/smart_tv.dart';
 import 'add_device_widget.dart';
 import 'dark_container.dart';
+import 'music_widget.dart';
+import 'savings_container.dart';
+import 'weather_container.dart';
 
 class Body extends StatelessWidget {
   final HomeScreenViewModel model;

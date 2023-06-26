@@ -1,9 +1,10 @@
-import 'package:domus/provider/base_view.dart';
 import 'package:flutter/material.dart';
 import 'package:sliding_up_panel/sliding_up_panel.dart';
-import 'package:domus/src/screens/smart_tv/components/expandable_bottom_sheet.dart';
-import 'package:domus/view/smart_tv_view_model.dart';
+
+import '../../../provider/base_view.dart';
+import '../../../view/smart_tv_view_model.dart';
 import 'components/body.dart';
+import 'components/expandable_bottom_sheet.dart';
 
 class SmartTV extends StatelessWidget {
   static String routeName = '/smart-tv';

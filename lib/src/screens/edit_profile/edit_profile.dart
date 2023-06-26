@@ -1,5 +1,6 @@
-import 'package:domus/src/screens/edit_profile/components/body.dart';
 import 'package:flutter/material.dart';
+
+import 'components/body.dart';
 
 class EditProfile extends StatelessWidget {
   static String routeName = '/edit-profile';

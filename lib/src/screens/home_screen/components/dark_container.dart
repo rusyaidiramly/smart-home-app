@@ -1,6 +1,7 @@
-import 'package:domus/config/size_config.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter_svg/flutter_svg.dart';
+
+import '../../../../config/size_config.dart';
 
 class DarkContainer extends StatelessWidget {
   final String iconAsset;
@@ -65,9 +66,9 @@ class DarkContainer extends StatelessWidget {
                   ),
                   GestureDetector(
                     onTap: switchFav,
-                    child:  Icon(
+                    child: Icon(
                       Icons.star_rounded,
-                      color: isFav ?  Colors.amber:const Color(0xFF808080),
+                      color: isFav ? Colors.amber : const Color(0xFF808080),
                       // color: Color(0xFF808080),
                     ),
                   ),
@@ -79,7 +80,7 @@ class DarkContainer extends StatelessWidget {
                   Text(
                     device,
                     textAlign: TextAlign.left,
-                    style: Theme.of(context).textTheme.headline2!.copyWith(
+                    style: Theme.of(context).textTheme.displayMedium!.copyWith(
                           color: itsOn ? Colors.white : Colors.black,
                         ),
                   ),
@@ -101,7 +102,7 @@ class DarkContainer extends StatelessWidget {
                   Text(
                     itsOn ? 'On' : 'Off',
                     textAlign: TextAlign.left,
-                    style: Theme.of(context).textTheme.headline2!.copyWith(
+                    style: Theme.of(context).textTheme.displayMedium!.copyWith(
                           color: itsOn ? Colors.white : Colors.black,
                         ),
                   ),

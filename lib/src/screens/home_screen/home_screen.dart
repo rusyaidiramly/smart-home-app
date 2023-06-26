@@ -1,14 +1,15 @@
-import 'package:domus/config/size_config.dart';
-import 'package:domus/provider/base_view.dart';
-import 'package:domus/src/screens/edit_profile/edit_profile.dart';
-import 'package:domus/src/screens/favourites_screen/favourites_screen.dart';
-import 'package:domus/src/widgets/custom_bottom_nav_bar.dart';
-import 'package:domus/view/home_screen_view_model.dart';
 import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
 import 'package:font_awesome_flutter/font_awesome_flutter.dart';
+
+import '../../../config/size_config.dart';
+import '../../../provider/base_view.dart';
+import '../../../view/home_screen_view_model.dart';
+import '../../widgets/custom_bottom_nav_bar.dart';
+import '../edit_profile/edit_profile.dart';
+import '../favourites_screen/favourites_screen.dart';
+import '../menu_page/menu_screen.dart';
 import 'components/body.dart';
-import 'package:domus/src/screens/menu_page/menu_screen.dart';
 
 class HomeScreen extends StatelessWidget {
   static String routeName = '/home-screen';
@@ -40,7 +41,7 @@ class HomeScreen extends StatelessWidget {
                     children: [
                       Text(
                         'Hi, Lex',
-                        style: Theme.of(context).textTheme.headline1,
+                        style: Theme.of(context).textTheme.displayLarge,
                       ),
                       SizedBox(
                         width: getProportionateScreenWidth(60),
@@ -53,7 +54,6 @@ class HomeScreen extends StatelessWidget {
                           borderRadius:
                               BorderRadius.all(Radius.elliptical(45, 45)),
                         ),
-
                         child: IconButton(
                           splashRadius: 25,
                           icon: const Icon(
@@ -62,9 +62,12 @@ class HomeScreen extends StatelessWidget {
                           ),
                           onPressed: () {
                             // Navigator.of(context).pushNamed(EditProfile.routeName);
-                            Navigator.push(context, MaterialPageRoute(builder: (context) => const EditProfile(),));
+                            Navigator.push(
+                                context,
+                                MaterialPageRoute(
+                                  builder: (context) => const EditProfile(),
+                                ));
                           },
-
                         ),
                       ),
                       SizedBox(
@@ -76,9 +79,8 @@ class HomeScreen extends StatelessWidget {
                         decoration: const BoxDecoration(
                           color: Color(0xffdadada),
                           borderRadius:
-                          BorderRadius.all(Radius.elliptical(45, 45)),
+                              BorderRadius.all(Radius.elliptical(45, 45)),
                         ),
-
                         child: IconButton(
                           splashRadius: 25,
                           icon: const Icon(
@@ -88,10 +90,13 @@ class HomeScreen extends StatelessWidget {
                           ),
                           onPressed: () {
                             // Navigator.of(context).pushNamed(EditProfile.routeName);
-                            Navigator.push(context, MaterialPageRoute(builder: (context) =>
-                                Favourites(
-                                  model:model,
-                                ),));
+                            Navigator.push(
+                                context,
+                                MaterialPageRoute(
+                                  builder: (context) => Favourites(
+                                    model: model,
+                                  ),
+                                ));
                           },
                         ),
                       ),
@@ -107,19 +112,19 @@ class HomeScreen extends StatelessWidget {
                         Tab(
                           child: Text(
                             'Living Room',
-                            style: Theme.of(context).textTheme.headline3,
+                            style: Theme.of(context).textTheme.displaySmall,
                           ),
                         ),
                         Tab(
                           child: Text(
                             'Dining',
-                            style: Theme.of(context).textTheme.headline4,
+                            style: Theme.of(context).textTheme.headlineMedium,
                           ),
                         ),
                         Tab(
                           child: Text(
                             'Kitchen',
-                            style: Theme.of(context).textTheme.headline4,
+                            style: Theme.of(context).textTheme.headlineMedium,
                           ),
                         ),
                       ]),
@@ -131,8 +136,7 @@ class HomeScreen extends StatelessWidget {
                 ),
               ),
               drawer: SizedBox(
-                 width: getProportionateScreenWidth(270),
-                  child: const Menu()),
+                  width: getProportionateScreenWidth(270), child: const Menu()),
               body: TabBarView(
                 children: <Widget>[
                   Body(
@@ -141,7 +145,7 @@ class HomeScreen extends StatelessWidget {
                   Center(
                     child: Text(
                       'To be Built Soon',
-                      style: Theme.of(context).textTheme.headline3,
+                      style: Theme.of(context).textTheme.displaySmall,
                     ),
                   ),
                   const Center(

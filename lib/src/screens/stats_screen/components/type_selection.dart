@@ -1,5 +1,6 @@
-import 'package:domus/config/size_config.dart';
 import 'package:flutter/material.dart';
+
+import '../../../../config/size_config.dart';
 
 class TypeSelection extends StatefulWidget {
   const TypeSelection({Key? key}) : super(key: key);

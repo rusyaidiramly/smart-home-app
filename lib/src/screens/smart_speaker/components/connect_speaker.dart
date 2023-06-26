@@ -1,5 +1,6 @@
-import 'package:domus/config/size_config.dart';
 import 'package:flutter/material.dart';
+
+import '../../../../config/size_config.dart';
 
 class ConnectSpeaker extends StatelessWidget {
   const ConnectSpeaker({Key? key}) : super(key: key);
@@ -26,11 +27,11 @@ class ConnectSpeaker extends StatelessWidget {
           ),
           Text(
             'Kakao Mini C',
-            style: Theme.of(context).textTheme.headline1,
+            style: Theme.of(context).textTheme.displayLarge,
           ),
           Text(
             'Smart Speaker',
-            style: Theme.of(context).textTheme.headline3,
+            style: Theme.of(context).textTheme.displaySmall,
           ),
           SizedBox(
             height: getProportionateScreenHeight(40),
@@ -51,7 +52,7 @@ class ConnectSpeaker extends StatelessWidget {
             onPressed: () {},
             child: Text(
               'Connect',
-              style: Theme.of(context).textTheme.headline3,
+              style: Theme.of(context).textTheme.displaySmall,
             ),
             style: OutlinedButton.styleFrom(
               padding: EdgeInsets.symmetric(

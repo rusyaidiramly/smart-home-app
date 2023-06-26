@@ -1,6 +1,7 @@
 import 'package:flutter/material.dart';
-import 'package:domus/config/size_config.dart';
 import 'package:flutter_svg/svg.dart';
+
+import '../../../../config/size_config.dart';
 
 class MenuListItems extends StatelessWidget {
   final String iconPath;

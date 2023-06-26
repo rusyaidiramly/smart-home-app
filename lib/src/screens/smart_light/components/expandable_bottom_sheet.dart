@@ -1,11 +1,11 @@
-import 'package:domus/config/size_config.dart';
-import 'package:domus/src/screens/smart_light/components/date_container.dart';
-import 'package:domus/src/screens/smart_light/components/reusable_buttons.dart';
-import 'package:domus/src/screens/smart_light/components/time_container.dart';
-import 'package:domus/view/smart_light_view_model.dart';
 import 'package:flutter/material.dart';
 
+import '../../../../config/size_config.dart';
+import '../../../../view/smart_light_view_model.dart';
 import 'advance_setting_container.dart';
+import 'date_container.dart';
+import 'reusable_buttons.dart';
+import 'time_container.dart';
 
 class ExpandableBottomSheet extends StatelessWidget {
   const ExpandableBottomSheet({Key? key, required this.model})
@@ -49,14 +49,14 @@ class ExpandableBottomSheet extends StatelessWidget {
                   children: [
                     Text(
                       'Schedule',
-                      style: Theme.of(context).textTheme.headline2,
+                      style: Theme.of(context).textTheme.displayMedium,
                     ),
                     const SizedBox(
                       height: 5,
                     ),
                     Text(
                       'Set schedule room light',
-                      style: Theme.of(context).textTheme.headline5,
+                      style: Theme.of(context).textTheme.headlineSmall,
                     )
                   ],
                 ),
@@ -87,19 +87,19 @@ class ExpandableBottomSheet extends StatelessWidget {
                   children: [
                     Text(
                       'January 2022',
-                      style: Theme.of(context).textTheme.headline2,
+                      style: Theme.of(context).textTheme.displayMedium,
                     ),
                     const SizedBox(
                       height: 5,
                     ),
                     Text(
                       'Select the desired date',
-                      style: Theme.of(context).textTheme.headline5,
+                      style: Theme.of(context).textTheme.headlineSmall,
                     )
                   ],
                 ),
-                Row(
-                  children: const [
+                const Row(
+                  children: [
                     Icon(Icons.arrow_back_ios_outlined),
                     SizedBox(
                       width: 20,
@@ -112,10 +112,10 @@ class ExpandableBottomSheet extends StatelessWidget {
             SizedBox(
               height: getProportionateScreenHeight(10),
             ),
-            SingleChildScrollView(
+            const SingleChildScrollView(
               scrollDirection: Axis.horizontal,
               child: Row(
-                children: const [
+                children: [
                   DateContainer(date: '01', day: 'Sat', active: true),
                   DateContainer(date: '02', day: 'Sun', active: false),
                   DateContainer(date: '03', day: 'Mon', active: false),
@@ -128,7 +128,7 @@ class ExpandableBottomSheet extends StatelessWidget {
             ),
             Text(
               'Select the desired time',
-              style: Theme.of(context).textTheme.headline5,
+              style: Theme.of(context).textTheme.headlineSmall,
             ),
             SizedBox(
               height: getProportionateScreenHeight(10),
@@ -141,7 +141,7 @@ class ExpandableBottomSheet extends StatelessWidget {
                   children: [
                     Text(
                       'On Time',
-                      style: Theme.of(context).textTheme.headline6,
+                      style: Theme.of(context).textTheme.titleLarge,
                     ),
                     const SizedBox(
                       height: 10,
@@ -155,7 +155,7 @@ class ExpandableBottomSheet extends StatelessWidget {
                   children: [
                     Text(
                       'Off Time',
-                      style: Theme.of(context).textTheme.headline6,
+                      style: Theme.of(context).textTheme.titleLarge,
                     ),
                     const SizedBox(
                       height: 10,
@@ -171,7 +171,7 @@ class ExpandableBottomSheet extends StatelessWidget {
             ),
             Text(
               'Advance setting',
-              style: Theme.of(context).textTheme.headline2,
+              style: Theme.of(context).textTheme.displayMedium,
             ),
             const SizedBox(
               height: 20,

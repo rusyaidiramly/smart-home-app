@@ -1,8 +1,9 @@
-import 'package:domus/config/size_config.dart';
-import 'package:domus/view/smart_fan_view_model.dart';
 import 'package:flutter/foundation.dart';
 import 'package:flutter/material.dart';
 import 'package:lottie/lottie.dart';
+
+import '../../../../config/size_config.dart';
+import '../../../../view/smart_fan_view_model.dart';
 
 class Body extends StatefulWidget {
   const Body({Key? key, required this.model}) : super(key: key);
@@ -102,7 +103,7 @@ class _BodyState extends State<Body> with TickerProviderStateMixin {
                               'Living\nRoom',
                               style: Theme.of(context)
                                   .textTheme
-                                  .headline1!
+                                  .displayLarge!
                                   .copyWith(
                                     fontSize: 45,
                                     color: const Color(0xFFBDBDBD)
@@ -111,7 +112,7 @@ class _BodyState extends State<Body> with TickerProviderStateMixin {
                             ),
                             Text(
                               'Smart\nFan',
-                              style: Theme.of(context).textTheme.headline1,
+                              style: Theme.of(context).textTheme.displayLarge,
                             ),
                           ],
                         ),
@@ -120,7 +121,7 @@ class _BodyState extends State<Body> with TickerProviderStateMixin {
                         ),
                         Text(
                           'Power',
-                          style: Theme.of(context).textTheme.headline2,
+                          style: Theme.of(context).textTheme.displayMedium,
                         ),
                         SizedBox(
                           height: getProportionateScreenHeight(4),
@@ -192,7 +193,7 @@ class _BodyState extends State<Body> with TickerProviderStateMixin {
             children: [
               Text(
                 'Mode',
-                style: Theme.of(context).textTheme.headline2,
+                style: Theme.of(context).textTheme.displayMedium,
               ),
               SizedBox(
                 height: getProportionateScreenHeight(9),
@@ -209,7 +210,7 @@ class _BodyState extends State<Body> with TickerProviderStateMixin {
                   borderRadius: BorderRadius.circular(15),
                   textStyle: Theme.of(context)
                       .textTheme
-                      .headline2!
+                      .displayMedium!
                       .copyWith(color: Colors.white),
                   children: <Widget>[
                     SizedBox(
@@ -248,11 +249,11 @@ class _BodyState extends State<Body> with TickerProviderStateMixin {
                 children: [
                   Text(
                     'Speed',
-                    style: Theme.of(context).textTheme.headline2,
+                    style: Theme.of(context).textTheme.displayMedium,
                   ),
                   Text(
                     '${widget.model.speed.toInt()}',
-                    style: Theme.of(context).textTheme.headline2,
+                    style: Theme.of(context).textTheme.displayMedium,
                   ),
                 ],
               ),
@@ -279,11 +280,11 @@ class _BodyState extends State<Body> with TickerProviderStateMixin {
                 children: [
                   Text(
                     'Off',
-                    style: Theme.of(context).textTheme.bodyText1,
+                    style: Theme.of(context).textTheme.bodyLarge,
                   ),
                   Text(
                     '100%',
-                    style: Theme.of(context).textTheme.bodyText1,
+                    style: Theme.of(context).textTheme.bodyLarge,
                   ),
                 ],
               ),

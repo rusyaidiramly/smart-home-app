@@ -1,7 +1,8 @@
 import 'package:flutter/material.dart';
-import 'package:domus/config/size_config.dart';
-import 'package:domus/src/screens/my_list_screen/components/list_data.dart';
-import 'package:domus/src/screens/my_list_screen/components/horizontal_list.dart';
+
+import '../../../../config/size_config.dart';
+import 'horizontal_list.dart';
+import 'list_data.dart';
 
 class Body extends StatelessWidget {
   const Body({Key? key}) : super(key: key);
@@ -9,14 +10,14 @@ class Body extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return SingleChildScrollView(
-      child:Padding(
+      child: Padding(
         padding: EdgeInsets.only(
           left: 10,
           right: 10,
           top: getProportionateScreenHeight(50),
           bottom: 20,
         ),
-        child:Column(
+        child: Column(
           crossAxisAlignment: CrossAxisAlignment.start,
           children: [
             Padding(
@@ -53,8 +54,10 @@ class Body extends StatelessWidget {
                 vertical: getProportionateScreenHeight(7),
               ),
               child: const Text(
-                  'Europe movie',
-                  style: TextStyle(fontSize: 19,),
+                'Europe movie',
+                style: TextStyle(
+                  fontSize: 19,
+                ),
               ),
             ),
             SizedBox(
@@ -67,8 +70,10 @@ class Body extends StatelessWidget {
                 vertical: getProportionateScreenHeight(7),
               ),
               child: const Text(
-                  'Romance/Drama',
-                  style: TextStyle(fontSize: 19,),
+                'Romance/Drama',
+                style: TextStyle(
+                  fontSize: 19,
+                ),
               ),
             ),
             SizedBox(
@@ -81,8 +86,10 @@ class Body extends StatelessWidget {
                 vertical: getProportionateScreenHeight(7),
               ),
               child: const Text(
-                  'Action/Thriller',
-                  style: TextStyle(fontSize: 19,),
+                'Action/Thriller',
+                style: TextStyle(
+                  fontSize: 19,
+                ),
               ),
             ),
             SizedBox(

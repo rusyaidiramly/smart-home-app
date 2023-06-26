@@ -1,6 +1,7 @@
-import 'package:domus/config/size_config.dart';
-import 'package:domus/view/home_screen_view_model.dart';
 import 'package:flutter/material.dart';
+
+import '../../../../config/size_config.dart';
+import '../../../../view/home_screen_view_model.dart';
 
 class WeatherContainer extends StatelessWidget {
   const WeatherContainer({Key? key, required this.model}) : super(key: key);
@@ -34,22 +35,22 @@ class WeatherContainer extends StatelessWidget {
                   children: [
                     Text(
                       '28°C',
-                      style: Theme.of(context).textTheme.headline1,
+                      style: Theme.of(context).textTheme.displayLarge,
                     ),
                     Text(
                       'Cloudy',
-                      style: Theme.of(context).textTheme.headline1,
+                      style: Theme.of(context).textTheme.displayLarge,
                     ),
                     SizedBox(
                       height: getProportionateScreenHeight(5),
                     ),
                     Text(
                       '27 Mar 2022',
-                      style: Theme.of(context).textTheme.headline5,
+                      style: Theme.of(context).textTheme.headlineSmall,
                     ),
                     Text(
                       'Jagakarsa,Jakarta',
-                      style: Theme.of(context).textTheme.headline5,
+                      style: Theme.of(context).textTheme.headlineSmall,
                     )
                   ],
                 ),

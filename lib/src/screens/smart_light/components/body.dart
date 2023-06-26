@@ -1,6 +1,7 @@
-import 'package:domus/config/size_config.dart';
-import 'package:domus/view/smart_light_view_model.dart';
 import 'package:flutter/material.dart';
+
+import '../../../../config/size_config.dart';
+import '../../../../view/smart_light_view_model.dart';
 
 class Body extends StatelessWidget {
   final SmartLightViewModel model;
@@ -44,7 +45,7 @@ class Body extends StatelessWidget {
                               'Living\nRoom',
                               style: Theme.of(context)
                                   .textTheme
-                                  .headline1!
+                                  .displayLarge!
                                   .copyWith(
                                     fontSize: 45,
                                     color: const Color(0xFFBDBDBD)
@@ -53,7 +54,7 @@ class Body extends StatelessWidget {
                             ),
                             Text(
                               'Living\nRoom',
-                              style: Theme.of(context).textTheme.headline1,
+                              style: Theme.of(context).textTheme.displayLarge,
                             ),
                           ],
                         ),
@@ -62,7 +63,7 @@ class Body extends StatelessWidget {
                         ),
                         Text(
                           'Power',
-                          style: Theme.of(context).textTheme.headline2,
+                          style: Theme.of(context).textTheme.displayMedium,
                         ),
                         SizedBox(
                           height: getProportionateScreenHeight(4),
@@ -82,7 +83,7 @@ class Body extends StatelessWidget {
                         ),
                         Text(
                           'Color',
-                          style: Theme.of(context).textTheme.headline2,
+                          style: Theme.of(context).textTheme.displayMedium,
                         ),
                         SizedBox(
                           height: getProportionateScreenHeight(7),
@@ -140,7 +141,7 @@ class Body extends StatelessWidget {
             children: [
               Text(
                 'Tone Glow',
-                style: Theme.of(context).textTheme.headline2,
+                style: Theme.of(context).textTheme.displayMedium,
               ),
               SizedBox(
                 height: getProportionateScreenHeight(9),
@@ -157,7 +158,7 @@ class Body extends StatelessWidget {
                   borderRadius: BorderRadius.circular(15),
                   textStyle: Theme.of(context)
                       .textTheme
-                      .headline2!
+                      .displayMedium!
                       .copyWith(color: Colors.white),
                   children: <Widget>[
                     SizedBox(
@@ -189,11 +190,11 @@ class Body extends StatelessWidget {
                 children: [
                   Text(
                     'Intensity',
-                    style: Theme.of(context).textTheme.headline2,
+                    style: Theme.of(context).textTheme.displayMedium,
                   ),
                   Text(
                     '${model.lightIntensity.toInt()}%',
-                    style: Theme.of(context).textTheme.headline2,
+                    style: Theme.of(context).textTheme.displayMedium,
                   ),
                 ],
               ),
@@ -219,11 +220,11 @@ class Body extends StatelessWidget {
                 children: [
                   Text(
                     'Off',
-                    style: Theme.of(context).textTheme.bodyText1,
+                    style: Theme.of(context).textTheme.bodyLarge,
                   ),
                   Text(
                     '100%',
-                    style: Theme.of(context).textTheme.bodyText1,
+                    style: Theme.of(context).textTheme.bodyLarge,
                   ),
                 ],
               ),

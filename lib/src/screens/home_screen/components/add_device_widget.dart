@@ -1,6 +1,7 @@
-import 'package:domus/config/size_config.dart';
 import 'package:dotted_border/dotted_border.dart';
 import 'package:flutter/material.dart';
+
+import '../../../../config/size_config.dart';
 
 class AddNewDevice extends StatelessWidget {
   const AddNewDevice({Key? key}) : super(key: key);
@@ -31,7 +32,7 @@ class AddNewDevice extends StatelessWidget {
               ),
               Text(
                 'Add New Device',
-                style: Theme.of(context).textTheme.headline4,
+                style: Theme.of(context).textTheme.headlineMedium,
               ),
             ],
           ),

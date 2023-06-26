@@ -1,6 +1,7 @@
-import 'package:domus/enum/view_state.dart';
-import 'package:domus/service/navigation_service.dart';
 import 'package:flutter/material.dart';
+
+import '../enum/view_state.dart';
+import '../service/navigation_service.dart';
 import 'getit.dart';
 
 class BaseModel extends ChangeNotifier {

@@ -1,6 +1,7 @@
-import 'package:domus/popups/popup_warning.dart';
-import 'package:domus/popups/popup_widgets.dart';
 import 'package:flutter/material.dart';
+
+import '../../../../popups/popup_warning.dart';
+import '../../../../popups/popup_widgets.dart';
 
 class SelectDayDialog extends StatelessWidget {
   const SelectDayDialog({Key? key}) : super(key: key);

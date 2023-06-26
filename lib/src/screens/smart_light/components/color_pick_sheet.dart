@@ -1,8 +1,9 @@
-import 'package:domus/src/screens/smart_light/components/color_dot.dart';
-import 'package:domus/src/screens/smart_light/components/reusable_buttons.dart';
-import 'package:domus/view/smart_light_view_model.dart';
 import 'package:flutter/material.dart';
-import 'package:domus/constant/constant.dart';
+
+import '../../../../constant/constant.dart';
+import '../../../../view/smart_light_view_model.dart';
+import 'color_dot.dart';
+import 'reusable_buttons.dart';
 
 class ColorPickerSheet extends StatelessWidget {
   const ColorPickerSheet({Key? key, required this.model}) : super(key: key);
@@ -43,14 +44,14 @@ class ColorPickerSheet extends StatelessWidget {
               children: [
                 Text(
                   'Color',
-                  style: Theme.of(context).textTheme.headline2,
+                  style: Theme.of(context).textTheme.displayMedium,
                 ),
                 const SizedBox(
                   height: 5,
                 ),
                 Text(
                   'Pick Light Color',
-                  style: Theme.of(context).textTheme.headline5,
+                  style: Theme.of(context).textTheme.headlineSmall,
                 ),
               ],
             ),

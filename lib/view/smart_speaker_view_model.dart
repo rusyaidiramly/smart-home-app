@@ -1,5 +1,6 @@
-import 'package:domus/provider/base_model.dart';
 import 'package:sliding_up_panel/sliding_up_panel.dart';
+
+import '../provider/base_model.dart';
 
 class SmartSpeakerViewModel extends BaseModel {
   PanelController pc = PanelController();

@@ -1,8 +1,9 @@
-import 'package:domus/config/size_config.dart';
-import 'package:domus/provider/base_view.dart';
-import 'package:domus/view/smart_light_view_model.dart';
 import 'package:flutter/material.dart';
 import 'package:sliding_up_panel/sliding_up_panel.dart';
+
+import '../../../config/size_config.dart';
+import '../../../provider/base_view.dart';
+import '../../../view/smart_light_view_model.dart';
 import 'components/body.dart';
 import 'components/color_pick_sheet.dart';
 import 'components/expandable_bottom_sheet.dart';

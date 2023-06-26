@@ -1,7 +1,8 @@
-import 'package:domus/config/size_config.dart';
-import 'package:domus/src/screens/edit_profile/components/image_picker.dart';
-import 'package:flutter/material.dart';
 import 'package:dotted_border/dotted_border.dart';
+import 'package:flutter/material.dart';
+
+import '../../../../config/size_config.dart';
+import 'image_picker.dart';
 
 class Body extends StatefulWidget {
   const Body({Key? key}) : super(key: key);
@@ -157,8 +158,8 @@ class _BodyState extends State<Body> {
                   controller: usernameController,
                   autofocus: false,
                   keyboardType: TextInputType.text,
-                  validator: (value){
-                    if(value!.isEmpty || value.trim().isEmpty){
+                  validator: (value) {
+                    if (value!.isEmpty || value.trim().isEmpty) {
                       return 'Username is required';
                     }
                     return null;
@@ -202,8 +203,8 @@ class _BodyState extends State<Body> {
                   controller: emailController,
                   autofocus: false,
                   keyboardType: TextInputType.emailAddress,
-                  validator: (value){
-                    if(value!.isEmpty || value.trim().isEmpty){
+                  validator: (value) {
+                    if (value!.isEmpty || value.trim().isEmpty) {
                       return 'Email is required';
                     }
                     return null;
@@ -248,7 +249,7 @@ class _BodyState extends State<Body> {
                   autofocus: false,
                   keyboardType: TextInputType.number,
                   validator: (value) {
-                    if(value!.isEmpty || value.trim().isEmpty) {
+                    if (value!.isEmpty || value.trim().isEmpty) {
                       return 'Phone no. is required';
                     }
                     return null;
@@ -297,8 +298,13 @@ class _BodyState extends State<Body> {
               borderRadius: BorderRadius.circular(20),
             ),
             child: const Center(
-                child: Text('Save Changes', style: TextStyle(fontSize: 18, color: Colors.white70, fontWeight: FontWeight.bold),)
-            ),
+                child: Text(
+              'Save Changes',
+              style: TextStyle(
+                  fontSize: 18,
+                  color: Colors.white70,
+                  fontWeight: FontWeight.bold),
+            )),
           ),
         ],
       ),

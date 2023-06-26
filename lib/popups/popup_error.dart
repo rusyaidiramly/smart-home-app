@@ -1,5 +1,6 @@
-import 'package:domus/popups/popup_state.dart';
 import 'package:flutter/material.dart';
+
+import 'popup_state.dart';
 
 class PopupError extends PopupState {
   const PopupError({

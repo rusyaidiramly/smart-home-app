@@ -1,5 +1,6 @@
-import 'package:domus/config/size_config.dart';
 import 'package:flutter/material.dart';
+
+import '../../../../config/size_config.dart';
 
 class TimeContainer extends StatelessWidget {
   const TimeContainer({
@@ -30,7 +31,7 @@ class TimeContainer extends StatelessWidget {
         children: [
           Text(
             time,
-            style: Theme.of(context).textTheme.headline2!.copyWith(
+            style: Theme.of(context).textTheme.displayMedium!.copyWith(
                 color:
                     active ? const Color(0xFF464646) : const Color(0xFFBDBDBD)),
           ),
@@ -40,7 +41,7 @@ class TimeContainer extends StatelessWidget {
           ),
           Text(
             meridiem,
-            style: Theme.of(context).textTheme.headline2!.copyWith(
+            style: Theme.of(context).textTheme.displayMedium!.copyWith(
                 color:
                     active ? const Color(0xFF464646) : const Color(0xFFBDBDBD)),
           ),

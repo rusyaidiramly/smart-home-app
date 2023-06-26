@@ -1,6 +1,7 @@
-import 'package:domus/src/screens/stats_screen/components.dart';
 import 'package:flutter/material.dart';
 import 'package:syncfusion_flutter_charts/charts.dart';
+
+import '../components.dart';
 
 class StatsElectricityUsageChart extends StatelessWidget {
   const StatsElectricityUsageChart({Key? key}) : super(key: key);

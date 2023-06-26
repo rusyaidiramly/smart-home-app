@@ -1,6 +1,7 @@
-import 'package:domus/src/screens/stats_screen/components.dart';
 import 'package:flutter/material.dart';
 import 'package:syncfusion_flutter_charts/charts.dart';
+
+import '../components.dart';
 
 class StatsDeviceConsumptionChart extends StatelessWidget {
   const StatsDeviceConsumptionChart({Key? key}) : super(key: key);
@@ -9,9 +10,9 @@ class StatsDeviceConsumptionChart extends StatelessWidget {
   Widget build(BuildContext context) {
     return StatsChart(
       title: 'Consumption by device',
-      subtitle: Row(
+      subtitle: const Row(
         crossAxisAlignment: CrossAxisAlignment.end,
-        children: const [
+        children: [
           Icon(
             Icons.warning,
             size: 18,
