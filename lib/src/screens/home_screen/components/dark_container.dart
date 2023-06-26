@@ -61,7 +61,10 @@ class DarkContainer extends StatelessWidget {
                     ),
                     child: SvgPicture.asset(
                       iconAsset,
-                      color: itsOn ? Colors.amber : const Color(0xFF808080),
+                      colorFilter: ColorFilter.mode(
+                        itsOn ? Colors.amber : const Color(0xFF808080),
+                        BlendMode.srcIn,
+                      ),
                     ),
                   ),
                   GestureDetector(

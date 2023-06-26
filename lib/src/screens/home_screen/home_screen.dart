@@ -104,6 +104,11 @@ class HomeScreen extends StatelessWidget {
                   ),
                 ),
                 bottom: PreferredSize(
+                  preferredSize: Size.fromHeight(
+                    getProportionateScreenHeight(
+                      35,
+                    ),
+                  ),
                   child: TabBar(
                       isScrollable: true,
                       unselectedLabelColor: Colors.white.withOpacity(0.3),
@@ -128,11 +133,6 @@ class HomeScreen extends StatelessWidget {
                           ),
                         ),
                       ]),
-                  preferredSize: Size.fromHeight(
-                    getProportionateScreenHeight(
-                      35,
-                    ),
-                  ),
                 ),
               ),
               drawer: SizedBox(

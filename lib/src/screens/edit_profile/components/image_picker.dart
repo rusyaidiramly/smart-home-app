@@ -7,7 +7,7 @@ class UploadImage extends StatefulWidget {
   const UploadImage({Key? key}) : super(key: key);
 
   @override
-  _UploadImageState createState() => _UploadImageState();
+  State<UploadImage> createState() => _UploadImageState();
 }
 
 class _UploadImageState extends State<UploadImage> {
@@ -56,11 +56,11 @@ class _UploadImageState extends State<UploadImage> {
                 getImageFromGallery();
               },
               child: ClipRRect(
+                borderRadius: BorderRadius.circular(35),
                 child: Image.file(
                   _image!,
                   fit: BoxFit.cover,
                 ),
-                borderRadius: BorderRadius.circular(35),
               ),
             ),
     );

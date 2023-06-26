@@ -33,7 +33,10 @@ class MusicWidget extends StatelessWidget {
               ),
               child: SvgPicture.asset(
                 'assets/icons/svg/music.svg',
-                color: Colors.black,
+                colorFilter: const ColorFilter.mode(
+                  Colors.black,
+                  BlendMode.srcIn,
+                ),
               ),
             ),
             Column(
@@ -54,7 +57,10 @@ class MusicWidget extends StatelessWidget {
               children: [
                 SvgPicture.asset(
                   'assets/icons/svg/prev.svg',
-                  color: Colors.black,
+                  colorFilter: const ColorFilter.mode(
+                    Colors.black,
+                    BlendMode.srcIn,
+                  ),
                   width: getProportionateScreenWidth(16),
                 ),
                 const SizedBox(
@@ -62,7 +68,10 @@ class MusicWidget extends StatelessWidget {
                 ),
                 SvgPicture.asset(
                   'assets/icons/svg/play.svg',
-                  color: Colors.black,
+                  colorFilter: const ColorFilter.mode(
+                    Colors.black,
+                    BlendMode.srcIn,
+                  ),
                   width: getProportionateScreenWidth(15),
                 ),
                 const SizedBox(
@@ -70,7 +79,10 @@ class MusicWidget extends StatelessWidget {
                 ),
                 SvgPicture.asset(
                   'assets/icons/svg/next.svg',
-                  color: Colors.black,
+                  colorFilter: const ColorFilter.mode(
+                    Colors.black,
+                    BlendMode.srcIn,
+                  ),
                   width: getProportionateScreenWidth(16),
                 ),
               ],

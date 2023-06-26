@@ -160,6 +160,10 @@ class Body extends StatelessWidget {
                       .textTheme
                       .displayMedium!
                       .copyWith(color: Colors.white),
+                  onPressed: (int index) {
+                    model.onToggleTapped(index);
+                  },
+                  isSelected: model.isSelected,
                   children: <Widget>[
                     SizedBox(
                       width: getProportionateScreenWidth(115),
@@ -176,10 +180,6 @@ class Body extends StatelessWidget {
                       ),
                     ),
                   ],
-                  onPressed: (int index) {
-                    model.onToggleTapped(index);
-                  },
-                  isSelected: model.isSelected,
                 ),
               ),
               SizedBox(

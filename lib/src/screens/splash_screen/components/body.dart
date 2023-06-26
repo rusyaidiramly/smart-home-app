@@ -23,8 +23,8 @@ class Body extends StatelessWidget {
             height: getProportionateScreenHeight(20),
           ),
           Material(
-            child: Image.asset('assets/images/splash_img.png'),
             color: Colors.transparent,
+            child: Image.asset('assets/images/splash_img.png'),
           ),
           Text(
             'Sweet & Smart Home',
@@ -42,10 +42,6 @@ class Body extends StatelessWidget {
             onPressed: () {
               Navigator.of(context).pushReplacementNamed(LoginScreen.routeName);
             },
-            child: Text(
-              'Get Started',
-              style: Theme.of(context).textTheme.displayMedium,
-            ),
             style: ElevatedButton.styleFrom(
               elevation: 0,
               padding: EdgeInsets.symmetric(
@@ -55,6 +51,10 @@ class Body extends StatelessWidget {
               shape: RoundedRectangleBorder(
                 borderRadius: BorderRadius.circular(20), // <-- Radius
               ),
+            ),
+            child: Text(
+              'Get Started',
+              style: Theme.of(context).textTheme.displayMedium,
             ),
           )
         ],

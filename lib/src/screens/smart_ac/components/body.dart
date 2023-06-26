@@ -174,6 +174,10 @@ class Body extends StatelessWidget {
                   .textTheme
                   .displayMedium!
                   .copyWith(color: Colors.white),
+              onPressed: (int index) {
+                model.onToggleTapped(index);
+              },
+              isSelected: model.isSelected,
               children: <Widget>[
                 SizedBox(
                   width: getProportionateScreenWidth(70),
@@ -182,9 +186,12 @@ class Body extends StatelessWidget {
                     children: [
                       SvgPicture.asset(
                         'assets/icons/svg/cool.svg',
-                        color: model.isSelected[0]
-                            ? Colors.white
-                            : const Color(0xFF808080),
+                        colorFilter: ColorFilter.mode(
+                          model.isSelected[0]
+                              ? Colors.white
+                              : const Color(0xFF808080),
+                          BlendMode.srcIn,
+                        ),
                         height: getProportionateScreenHeight(
                           22,
                         ),
@@ -203,9 +210,12 @@ class Body extends StatelessWidget {
                     children: [
                       SvgPicture.asset(
                         'assets/icons/svg/air.svg',
-                        color: model.isSelected[1]
-                            ? Colors.white
-                            : const Color(0xFF808080),
+                        colorFilter: ColorFilter.mode(
+                          model.isSelected[1]
+                              ? Colors.white
+                              : const Color(0xFF808080),
+                          BlendMode.srcIn,
+                        ),
                         height: getProportionateScreenHeight(
                           22,
                         ),
@@ -224,9 +234,12 @@ class Body extends StatelessWidget {
                     children: [
                       SvgPicture.asset(
                         'assets/icons/svg/sun.svg',
-                        color: model.isSelected[2]
-                            ? Colors.white
-                            : const Color(0xFF808080),
+                        colorFilter: ColorFilter.mode(
+                          model.isSelected[2]
+                              ? Colors.white
+                              : const Color(0xFF808080),
+                          BlendMode.srcIn,
+                        ),
                         height: getProportionateScreenHeight(
                           22,
                         ),
@@ -245,9 +258,12 @@ class Body extends StatelessWidget {
                     children: [
                       SvgPicture.asset(
                         'assets/icons/svg/eco.svg',
-                        color: model.isSelected[3]
-                            ? Colors.white
-                            : const Color(0xFF808080),
+                        colorFilter: ColorFilter.mode(
+                          model.isSelected[3]
+                              ? Colors.white
+                              : const Color(0xFF808080),
+                          BlendMode.srcIn,
+                        ),
                         height: getProportionateScreenHeight(
                           22,
                         ),
@@ -260,10 +276,6 @@ class Body extends StatelessWidget {
                   ),
                 ),
               ],
-              onPressed: (int index) {
-                model.onToggleTapped(index);
-              },
-              isSelected: model.isSelected,
             ),
           ),
           SizedBox(

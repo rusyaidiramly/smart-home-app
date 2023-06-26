@@ -95,11 +95,11 @@ class Body extends StatelessWidget {
                 color: const Color(0xFF464646),
                 borderRadius: BorderRadius.circular(70.0),
               ),
+              alignment: Alignment.center,
               child: const Text(
                 'Get Started',
                 style: TextStyle(color: Colors.white),
               ),
-              alignment: Alignment.center,
             ),
           ),
         ),

@@ -12,7 +12,7 @@ class FavouriteList extends StatefulWidget {
   const FavouriteList({Key? key, required this.model}) : super(key: key);
   final HomeScreenViewModel model;
   @override
-  _FavouriteListState createState() => _FavouriteListState();
+  State<FavouriteList> createState() => _FavouriteListState();
 }
 
 class _FavouriteListState extends State<FavouriteList> {

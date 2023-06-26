@@ -9,7 +9,7 @@ class Body extends StatefulWidget {
   const Body({Key? key, required this.model}) : super(key: key);
   final SmartFanViewModel model;
   @override
-  _BodyState createState() => _BodyState();
+  State<Body> createState() => _BodyState();
 }
 
 class _BodyState extends State<Body> with TickerProviderStateMixin {
@@ -212,6 +212,10 @@ class _BodyState extends State<Body> with TickerProviderStateMixin {
                       .textTheme
                       .displayMedium!
                       .copyWith(color: Colors.white),
+                  onPressed: (int index) {
+                    widget.model.onToggleTapped(index);
+                  },
+                  isSelected: widget.model.isSelected,
                   children: <Widget>[
                     SizedBox(
                       width: getProportionateScreenWidth(76),
@@ -235,10 +239,6 @@ class _BodyState extends State<Body> with TickerProviderStateMixin {
                       ),
                     ),
                   ],
-                  onPressed: (int index) {
-                    widget.model.onToggleTapped(index);
-                  },
-                  isSelected: widget.model.isSelected,
                 ),
               ),
               SizedBox(

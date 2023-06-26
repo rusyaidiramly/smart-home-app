@@ -19,7 +19,7 @@ class BaseView<T extends BaseModel> extends StatefulWidget {
   }) : super(key: key);
 
   @override
-  _BaseViewState<T> createState() => _BaseViewState<T>();
+  State<BaseView<T>> createState() => _BaseViewState<T>();
 }
 
 class _BaseViewState<T extends BaseModel> extends State<BaseView<T>> {

@@ -9,7 +9,7 @@ class Favourites extends StatefulWidget {
   final HomeScreenViewModel model;
   const Favourites({Key? key, required this.model}) : super(key: key);
   @override
-  _FavouritesState createState() => _FavouritesState();
+  State<Favourites> createState() => _FavouritesState();
 }
 
 class _FavouritesState extends State<Favourites> {

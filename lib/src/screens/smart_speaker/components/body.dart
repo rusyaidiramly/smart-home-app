@@ -138,41 +138,41 @@ class Body extends StatelessWidget {
                   children: [
                     ElevatedButton(
                       onPressed: () {},
+                      style: ElevatedButton.styleFrom(
+                        elevation: 0.0,
+                        shape: const CircleBorder(),
+                        padding: const EdgeInsets.all(10),
+                      ),
                       child: const Icon(
                         Icons.first_page_rounded,
                         size: 30,
                         color: Color(0xFF464646),
                       ),
-                      style: ElevatedButton.styleFrom(
-                        elevation: 0.0,
-                        shape: const CircleBorder(),
-                        padding: const EdgeInsets.all(10),
-                      ),
                     ),
                     ElevatedButton(
                       onPressed: () {},
-                      child: const Icon(
-                        Icons.play_arrow_rounded,
-                        size: 35,
-                        color: Color(0xFFF2F2F2),
-                      ),
                       style: ElevatedButton.styleFrom(
                         elevation: 0.0,
                         shape: const CircleBorder(),
                         padding: const EdgeInsets.all(8),
                       ),
+                      child: const Icon(
+                        Icons.play_arrow_rounded,
+                        size: 35,
+                        color: Color(0xFFF2F2F2),
+                      ),
                     ),
                     ElevatedButton(
                       onPressed: () {},
-                      child: const Icon(
-                        Icons.last_page_rounded,
-                        size: 30,
-                        color: Color(0xFF464646),
-                      ),
                       style: ElevatedButton.styleFrom(
                         elevation: 0.0,
                         shape: const CircleBorder(),
                         padding: const EdgeInsets.all(10),
+                      ),
+                      child: const Icon(
+                        Icons.last_page_rounded,
+                        size: 30,
+                        color: Color(0xFF464646),
                       ),
                     )
                   ],
@@ -188,67 +188,67 @@ class Body extends StatelessWidget {
             children: [
               ElevatedButton(
                 onPressed: () {},
+                style: ElevatedButton.styleFrom(
+                  elevation: 0.0,
+                  shape: const CircleBorder(),
+                  padding: const EdgeInsets.all(10),
+                ),
                 child: const Icon(
                   Icons.playlist_play_rounded,
                   size: 30,
                   color: Color(0xFF464646),
                 ),
+              ),
+              ElevatedButton(
+                onPressed: () {},
                 style: ElevatedButton.styleFrom(
                   elevation: 0.0,
                   shape: const CircleBorder(),
                   padding: const EdgeInsets.all(10),
                 ),
-              ),
-              ElevatedButton(
-                onPressed: () {},
                 child: const Icon(
                   Icons.shuffle_rounded,
                   size: 25,
                   color: Color(0xFF464646),
                 ),
+              ),
+              ElevatedButton(
+                onPressed: () {},
                 style: ElevatedButton.styleFrom(
                   elevation: 0.0,
                   shape: const CircleBorder(),
                   padding: const EdgeInsets.all(10),
                 ),
-              ),
-              ElevatedButton(
-                onPressed: () {},
                 child: const Icon(
                   Icons.repeat_rounded,
                   size: 25,
                   color: Color(0xFF464646),
                 ),
+              ),
+              ElevatedButton(
+                onPressed: () {},
                 style: ElevatedButton.styleFrom(
                   elevation: 0.0,
                   shape: const CircleBorder(),
                   padding: const EdgeInsets.all(10),
                 ),
-              ),
-              ElevatedButton(
-                onPressed: () {},
                 child: const Icon(
                   Icons.equalizer_rounded,
                   size: 25,
                   color: Color(0xFF464646),
                 ),
+              ),
+              ElevatedButton(
+                onPressed: () {},
                 style: ElevatedButton.styleFrom(
                   elevation: 0.0,
                   shape: const CircleBorder(),
                   padding: const EdgeInsets.all(10),
                 ),
-              ),
-              ElevatedButton(
-                onPressed: () {},
                 child: const Icon(
                   Icons.favorite_rounded,
                   size: 25,
                   color: Color(0xFF464646),
-                ),
-                style: ElevatedButton.styleFrom(
-                  elevation: 0.0,
-                  shape: const CircleBorder(),
-                  padding: const EdgeInsets.all(10),
                 ),
               )
             ],
