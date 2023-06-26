@@ -39,9 +39,13 @@ class HomeScreen extends StatelessWidget {
                   child: Row(
                     // mainAxisAlignment: MainAxisAlignment.spaceBetween,
                     children: [
-                      Text(
-                        'Hi, Lex',
-                        style: Theme.of(context).textTheme.displayLarge,
+                      Expanded(
+                        child: FittedBox(
+                          child: Text(
+                            'Hi, Lex',
+                            style: Theme.of(context).textTheme.displayLarge,
+                          ),
+                        ),
                       ),
                       SizedBox(
                         width: getProportionateScreenWidth(60),
